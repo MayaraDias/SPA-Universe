@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-box: box-sizing;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --hue: 240;
+  --nav-color: hsl(var(--hue) 7% 78%);
+  --text-color: hsl(var(--hue) 9% 89%);
+  --bg-nav-color: hsl(calc(var(--hue) + 8) 100% 11%);
+  --hover-color: #ffffff;
+
+  font-size: 62.5%;
+}
