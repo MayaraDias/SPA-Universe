@@ -1,7 +1,14 @@
-function menuOpen() {
-  document.body.classList.add('menuExpande')
-}
+import { Router } from './router.js'
 
-function closeMenu() {
-  document.body.classList.remove('menuExpande')
-}
+const router = new Router()
+router.add('/home', '/pages/home.html')
+router.add('/universe', '/pages/universe.html')
+router.add('/explorer', '/pages/explorer')
+router.add(404, '/pages/404.html')
+
+router.handle()
+
+window.onpopstate = () => router.handle()
+window.route = () => router.route()
+
+console.log(router)

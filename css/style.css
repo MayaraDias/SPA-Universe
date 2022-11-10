@@ -53,11 +53,15 @@ nav .wrapper {
 }
 
 .mountain {
-  background-image: url('/assets/mountains.png');
+  background-image: url(/assets/mountains.png);
   position: absolute;
-  objetc-fit: scale-down;
   top: 0;
   left: 0;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  z-index: -100;
 }
 
 button {

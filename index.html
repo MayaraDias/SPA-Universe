@@ -41,14 +41,18 @@
           </div>
           <div class="menu">
             <ul class="menuNavigation">
-              <li><a href="/home" onclick="route(); menuClose()">Home</a></li>
               <li>
-                <a href="/universe" onclick="route() ; menuClose()"
+                <a href="/home" onclick="route()" class="buttonCloseMenu"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="/universe" onclick="route()" class="buttonCloseMenu"
                   >O Universo</a
                 >
               </li>
               <li>
-                <a href="/explorer" onclick="route() ; menuClose()"
+                <a href="/explorer" onclick="route()" class="buttonCloseMenu"
                   >Exploração</a
                 >
               </li>
@@ -76,6 +80,7 @@
     </header>
 
     <div id="app"></div>
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/elements.js"></script>
   </body>
 </html>
