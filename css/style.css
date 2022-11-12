@@ -23,7 +23,7 @@ img {
   width: 100%;
 }
 
-.wrapper {
+.container {
   width: 37.5rem;
 }
 
@@ -37,14 +37,15 @@ nav {
   z-index: 100;
   left: 50%;
   transform: translate(-50%);
+  align-items: center;
 }
 
-nav a:hover {
+.menuNavigation a:hover {
   font-weight: bold;
   color: #ffffff;
 }
 
-nav .wrapper {
+nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,4 +131,54 @@ body.menuExpande .closeMenu {
   opacity: 1;
   visibility: visible;
   display: inline;
+}
+
+/*=========== MEDIA QUERIES ============*/
+
+@media (min-width: 760px) {
+  nav .container {
+    justify-content: initial;
+  }
+
+  .container {
+    width: 76rem;
+  }
+
+  .menu {
+    transform: translateX(0);
+  }
+
+  .openMenu,
+  .closeMenu {
+    display: none;
+  }
+
+  .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menuNavigation {
+    display: flex;
+    gap: 2.2rem;
+  }
+
+  .menuNavigation a {
+    display: flex;
+    gap: 3.2rem;
+    color: var(--nav-color);
+    font-size: 2.16rem;
+    line-height: 2.16rem;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 90rem;
+  }
+
+  .menu {
+    transform: translateX(0);
+  }
 }

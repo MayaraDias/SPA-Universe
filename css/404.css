@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*VARIABLES AND SETTINGS*/
+
+:root {
+  --hue: 240;
+  --nav-color: hsl(var(--hue) 7% 78%);
+  --text-color: hsl(var(--hue) 9% 89%);
+  --bg-nav-color: hsl(calc(var(--hue) + 8) 100% 11%);
+  --text-hover-color: hsl(calc(var(--hue) - 46) 97% 31%);
+  --bg-hover-color: #ffffff;
+
+  font-size: 62.5%;
+}
+
+.atmosphere {
+  background-image: url(/assets/space.jpeg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  z-index: -100;
+}
+
+.wrapper {
+  width: 37.5rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+}
+
+.textContainer {
+  display: grid;
+  justify-self: center;
+  gap: 2.4rem;
+  margin-top: 6.3rem;
+}
+
+.title404 {
+  text-align: start;
+  font-size: 5.8rem;
+  color: var(--text-hover-color);
+}
+
+.text404 {
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  color: #ffffff;
+  font-weight: 700;
+}
