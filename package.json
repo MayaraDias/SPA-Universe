@@ -1,0 +1,24 @@
+{
+  "name": "stage_6",
+  "version": "1.0.0",
+  "description": "Página criada utilizando os conceitos de SPA - Single Page Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MayaraDias/SPA-Universe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MayaraDias/SPA-Universe/issues"
+  },
+  "homepage": "https://github.com/MayaraDias/SPA-Universe#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "live-server": "^1.2.2"
+  }
+}
